@@ -17,7 +17,7 @@ function submitPost(){
 
 	const postObj = {
 		bloodGroup:bg.value,
-		units:units.value,
+		NumOfUnits:units.value,
 		urgency:urgency.value,
 		country:country.value,
 		city:city.value,
@@ -25,6 +25,7 @@ function submitPost(){
 		relation:relation.value,
 		contact:contact.value,
 		info:info.value,
+		postedBy:user.name
 	}
 	console.log(postObj)	
 	database.child(`BloodPosts/${user.uid}`).push(postObj)

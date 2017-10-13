@@ -20,7 +20,7 @@ document.getElementById('stop')
                     .once('value',  (snapshot) => {
                         // let convert = {};
                         let convert = {
-                            name:snapshot.val().firstname + ' ' + snapshot.val().lastname,
+                            name:snapshot.val().firstName + ' ' + snapshot.val().lastName,
                             email:snapshot.val().email,
                             uid:res.uid
                         }
