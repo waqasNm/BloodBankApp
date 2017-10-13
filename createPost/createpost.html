@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="../bootstrap-4/css/bootstrap.css">
+    <style>
+        body {
+            background-color: #444444;
+        }
+
+        .main {
+            background-color: #FCFCFC;
+            width: 500px;
+            margin: 100px auto;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .input {
+            margin-bottom: 10px;
+        }
+    </style>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCNq84SnMX0GRVN395vt9UgnOb6Qe5QB0o",
+        authDomain: "bloodbankapp-7dd5c.firebaseapp.com",
+        databaseURL: "https://bloodbankapp-7dd5c.firebaseio.com",
+        projectId: "bloodbankapp-7dd5c",
+        storageBucket: "bloodbankapp-7dd5c.appspot.com",
+        messagingSenderId: "779116821460"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+    <div class="form-group main">
+        <h2 style="text-align: center;" class="text-primary">Create Post</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <select class="form-control" id="bg" >
+                        <option selected>Blood Group</option>
+                        <option value="A+">A Positive</option>
+                        <option value="B+">B Positive</option>
+                        <option value="AB+">AB Positive</option>
+                        <option value="A-">A Negative</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <input type="number" class="form-control input" name="" id="units" placeholder="No. of Units required"> 
+            </div>
+        </div>
+
+         <div class="form-group">
+            <select name="Urgency" id="urgency" class="form-control">
+                <option selected>Urgency</option>
+                <option value="2Days">2 Days</option>
+                <option value="3Days">3 Days</option>
+                <option value="4Days">4 Days</option>
+                <option value="5Days">5 Days</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <select name="Country" id="country" class="form-control">
+                        <option selected>Country</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="India">India</option>
+                        <option value="Turkey">Turkey</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <select name="City" id="city" class="form-control">
+                        <option selected>City</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Lahore">Lahore</option>
+                    </select>
+                </div>            
+            </div>
+        </div>
+        
+        
+        <div class="form-group">
+            <select name="Hospital" id="hospital" class="form-control">
+                <option selected>Hospital</option>
+                <option value="Aga Khan">Aga Khan</option>
+                <option value="National">National</option>
+                <option value="Abbasi">Abbasi</option>
+            </select>
+        </div>
+
+        <input type="text" class="form-control input" name="" id="relation" placeholder="Your Relation with Patient">
+        <input type="number" class="form-control input" name="" id="contact" placeholder="Contact No.">
+        <textarea name="" id="info" cols="30" rows="5" class="form-control" placeholder="Additional Information"></textarea>
+        <button class="btn btn-success btn-block" onclick="submitPost()">Submit Post</button>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+<script src="./createpost.js"></script>
+
+</html>

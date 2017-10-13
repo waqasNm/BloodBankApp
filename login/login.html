@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="../bootstrap-4/css/bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+     <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCNq84SnMX0GRVN395vt9UgnOb6Qe5QB0o",
+        authDomain: "bloodbankapp-7dd5c.firebaseapp.com",
+        databaseURL: "https://bloodbankapp-7dd5c.firebaseio.com",
+        projectId: "bloodbankapp-7dd5c",
+        storageBucket: "bloodbankapp-7dd5c.appspot.com",
+        messagingSenderId: "779116821460"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form class="form-signin" id="stop">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+    </div>
+    <!-- /container -->
+
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/popper.js"></script>
+    <script src="../lib/boot.js"></script>
+    <script src="../bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+<script src="login.js"></script>
+
+</html>
