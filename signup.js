@@ -4,14 +4,15 @@ var firstName = document.getElementById('fname')
 var lastName = document.getElementById('lname')
 var email = document.getElementById('email')
 var pass = document.getElementById('pswd')
-
+var bg = document.getElementById('bloodGroup');
 function submit() {
 
     let user = {
         firstName: firstName.value,
         lastName: lastName.value,
         email: email.value,
-        pass: pass.value
+        pass: pass.value,
+        bloodGroup:bg.value
     }
     console.log(user)
     firebase.auth().

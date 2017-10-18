@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feeds</title>       
+    
+    <link rel="stylesheet" href="../bootstrap-4/css/bootstrap.css">
+
+
+       <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCNq84SnMX0GRVN395vt9UgnOb6Qe5QB0o",
+        authDomain: "bloodbankapp-7dd5c.firebaseapp.com",
+        databaseURL: "https://bloodbankapp-7dd5c.firebaseio.com",
+        projectId: "bloodbankapp-7dd5c",
+        storageBucket: "bloodbankapp-7dd5c.appspot.com",
+        messagingSenderId: "779116821460"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+
+
+    <div class="container" id="body">
+        <h1 id="heading" class="text-primary">All Post</h1>
+        <hr/>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../bootstrap-4/js/bootstrap.min.js"></script>
+    <script src="feeds.js"></script>
+</body>
+</html>

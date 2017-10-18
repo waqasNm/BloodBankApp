@@ -30,4 +30,14 @@ function submitPost(){
 	console.log(postObj)	
 	database.child(`BloodPosts/${user.uid}`).push(postObj)
 
+	bg.value = "Blood Group";
+	units.value = "";
+	urgency.value = "Urgency";
+	country.value = "Country";
+	city.value = "City";
+	hospital.value = "Hospital";
+	relation.value = "";
+	contact.value = "";
+	info.value = "";
+
 }
